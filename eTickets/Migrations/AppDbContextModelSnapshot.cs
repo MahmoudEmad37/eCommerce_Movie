@@ -5,10 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eTickets.Data;
+using eTickets.Data.Services;
 
 namespace eTickets.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(IActorsService))]
     partial class AppDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
